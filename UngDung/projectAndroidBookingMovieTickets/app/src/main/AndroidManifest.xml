@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectAndroidBookingMovieTickets"
+        tools:targetApi="31">
+        <activity
+            android:name=".BillInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeatSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowtimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.movie.MovieAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.movie.MovieInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MovieSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.movie.MovieUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.food.FoodAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.food.FoodSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.food.FoodUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.showtime.ShowtimeSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.showtime.ShowtimeAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.showtime.ShowtimeUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.customer.CustomerSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.customer.CustomerAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.customer.CustomerUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartScreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ProjectAndroidBookingMovieTickets">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>

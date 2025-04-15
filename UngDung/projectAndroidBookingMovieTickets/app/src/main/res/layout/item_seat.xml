@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seat_view"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/bg_seat"
+    android:clipToOutline="true">
+
+    <TextView
+        android:id="@+id/tvSeatName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold" />
+</FrameLayout>

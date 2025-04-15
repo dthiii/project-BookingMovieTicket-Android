@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkDatePickerDialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- Màu chữ ngày trong Calendar -->
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text</item>
+
+        <!-- Chỉnh màu chữ trong header -->
+        <item name="materialCalendarHeaderTitle">@color/text</item>
+
+        <item name="selectableItemBackground">@color/text_highlight</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trangchu"
+            android:icon="@drawable/home"
+            android:title="Trang chủ" />
+
+
+        <item
+            android:id="@+id/nav_lichchieu"
+            android:icon="@drawable/film"
+            android:title="Lịch chiếu" />
+
+
+        <item
+            android:id="@+id/nav_cuahang"
+            android:icon="@drawable/shop"
+            android:title="Cửa hàng" />
+
+        <item
+            android:id="@+id/nav_media"
+            android:icon="@drawable/megaphone"
+            android:title="Media" />
+
+        <item
+            android:id="@+id/nav_khuyenmai"
+            android:icon="@drawable/discount"
+            android:title="Khuyến mãi" />
+
+        <item
+            android:id="@+id/nav_thongtincuaban"
+            android:icon="@drawable/user"
+            android:title="Thông tin của bạn" />
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Đăng xuất"/>
+        </menu>
+    </item>
+</menu>

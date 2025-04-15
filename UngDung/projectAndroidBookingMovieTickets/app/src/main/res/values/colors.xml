@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#FFBB86FC</color>
+    <color name="black">#FF000000</color>
+    <color name="bottom_nav">#282828</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_highlight">#5AAC00</color>
+    <color name="background">#11130E</color>
+    <color name="nav_menu">#1A1D16</color>
+    <color name="text_dark">#898989</color>
+    <color name="pink">#E284A6</color>
+    <color name="red">#FB0707</color>
+</resources>
+

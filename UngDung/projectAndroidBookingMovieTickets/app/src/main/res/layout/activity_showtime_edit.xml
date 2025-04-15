@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.movie.MovieUpdateActivity"
+    android:background="@color/background">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imbBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/resource_return" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Cập nhật suất chiếu"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ShowtimeIdLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center_vertical"
+                android:hint="Mã suất chiếu"
+                android:textColorHint="@color/text"
+                app:boxBackgroundColor="@color/text"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/textinput_stroke_color"
+                app:endIconCheckable="false"
+                app:endIconMode="none"
+                app:hintTextColor="@color/text_highlight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtShowtimeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/MovieNameLayout"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center_vertical"
+                android:hint="Tên phim"
+                android:textColorHint="@color/text"
+                app:boxBackgroundColor="@color/text"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/text"
+                app:boxStrokeWidth="2dp"
+                app:endIconCheckable="false"
+                app:endIconMode="none"
+                app:hintTextColor="@color/text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShowtimeIdLayout"
+                android:background="@drawable/table_row_border">
+
+                <Spinner
+                    android:id="@+id/spnMovieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DateLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center_vertical"
+                android:hint="Ngày chiếu"
+                android:textColorHint="@color/text"
+                app:boxBackgroundColor="@color/text"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/textinput_stroke_color"
+                app:endIconCheckable="false"
+                app:endIconMode="none"
+                app:hintTextColor="@color/text_highlight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MovieNameLayout"
+                android:background="@drawable/table_row_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtDate"
+                        android:layout_width="322dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/background"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/text" />
+
+                    <ImageView
+                        android:id="@+id/imvDate"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/calendar"
+                        android:tint="@color/text_highlight" />
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TimeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center_vertical"
+                android:hint="Giờ chiếu"
+                android:textColorHint="@color/text"
+                app:boxBackgroundColor="@color/text"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/textinput_stroke_color"
+                app:endIconCheckable="false"
+                app:endIconMode="none"
+                app:hintTextColor="@color/text_highlight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DateLayout"
+                android:background="@drawable/table_row_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTime"
+                        android:layout_width="322dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/background"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/text" />
+
+                    <ImageView
+                        android:id="@+id/imvTime"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="0dp"
+                        android:src="@drawable/clock"
+                        android:tint="@color/text_highlight" />
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/text_highlight"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TimeLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

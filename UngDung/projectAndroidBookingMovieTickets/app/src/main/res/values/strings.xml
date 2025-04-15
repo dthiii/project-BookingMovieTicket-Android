@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">project-Android-Booking-MovieTickets</string>
+
+    <string-array name="movie_genres">
+        <item>Drama</item>
+        <item>Family</item>
+        <item>Musical</item>
+        <item>Comedy</item>
+        <item>Horror</item>
+        <item>Action</item>
+        <item>History</item>
+    </string-array>
+</resources>

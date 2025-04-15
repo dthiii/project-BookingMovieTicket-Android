@@ -1,0 +1,62 @@
+Mã lớp học phần: 2511101072002
+Mã SV: 2221004306
+Họ tên: Nguyễn Trần Đoan Thi
+Tên đề tài: XÂY DỰNG CHƯƠNG TRÌNH ANDROID ĐẶT VÉ XEM PHIM TẠI RẠP CHIẾU PHIM BHD STAR CINEPLEX
+
+
+1. Giới thiệu ứng dụng
+Ứng dụng Android giúp người dùng:
+- Xem danh sách các bộ phim đang chiếu.
+- Xem lịch chiếu theo rạp, ngày và suất chiếu.
+- Đặt vé xem phim nhanh chóng.
+- Quản lý thông tin phim, đồ ăn kèm, khách hàng, suất chiếu.
+
+
+2. Yêu cầu hệ thống
+- Thiết bị Android: Phiên bản Android 5.0 trở lên.
+- Ngôn ngữ: Kotlin
+- Cơ sở dữ liệu: SQLite
+
+3. Cài đặt ứng dụng
+Hướng dẫn xuất file APK
+- Vào menu: Build -> Generate App Bundles or APKs -> Generate APKs.
+- Android Studio sẽ tiến hành build APK.
+- Khi hoàn tất, sẽ hiện thông báo ở góc dưới phải “APK(s) generated successfully”. Bấm "locate" để mở thư mục chứa file APK.
+- Đường dẫn: <projectAndroidBookingMovieTickets\app\build\outputs\apk\debug\app-debug.apk
+
+Hướng dẫn cài đặt APK lên thiết bị hoặc máy ảo
+ Trên thiết bị thật: Sao chép file APK vào điện thoại -> Mở và cài đặt (bật “Cài ứng dụng không rõ nguồn gốc”).
+ Trên máy ảo:
+	- Mở máy ảo Android từ Android Studio.
+	- Kéo thả file APK vào cửa sổ máy ảo để tự động cài đặt.
+
+
+4. Hướng dẫn sử dụng
+4.1. Trang chủ
+- Hiển thị danh sách phim.
+- Bấm vào phim để xem thông tin chi tiết.
+
+4.2. Đặt vé
+Chọn phim → Chọn ngày → Chọn suất chiếu → Chọn ghế → Chọn combo bắp nước (nếu có) → Hoàn tất đặt vé.
+
+4.3. Quản lý phim
+Thêm/sửa/tìm kiếm thông tin phim.
+
+4.4. Quản lý khách hàng
+Thêm/sửa/tìm kiếm thông tin khách hàng.
+
+4.5. Quản lý suất chiếu
+Thêm, sửa, xoá suất chiếu.
+
+
+4.6. Quản lý đồ ăn kèm
+Thêm, xoá, sửa đồ ăn kèm.
+
+
+
+5. Ghi chú
+Ứng dụng lưu dữ liệu cục bộ bằng SQLite, chưa có kết nối internet.
+
+Tài khoản nhân viên được lưu trong SharedPreferences để xác định rạp tương ứng.
+
+Mỗi chức năng được chia thành Activity hoặc Fragment riêng biệt để dễ bảo trì.
